@@ -1,0 +1,55 @@
+Git Cheat Sheet
+
+-->Clone Repository , Download the Existing Repository.
+## git clone <<Repository_name.git>>
+=============================================================================================
+-->Initialize a New Repository ,it Turn an existing directory into a git repository.
+## git init 
+=============================================================================================
+-->Pulling Remote Tracking branches
+## git fetch 
+
+=============================================================================================
+-->Updates your current local working branch with all new commits from the corresponding remote branch on GitHub.
+-->git pull is a combination of git fetch and git merge 
+## git pull
+=============================================================================================
+-->Creates a new branch
+
+git branch [branch-name]
+
+=============================================================================================
+-->Listing a branch.
+## git branch                        // Point out the current branch
+## git branch -a                     // List out all the branches
+## git branch -av
+=============================================================================================
+-->Switch to any branch
+## git checkout feature_branch
+
+=============================================================================================
+
+Visual Studio:
+Add a git Plugin first:
+View-->Command Pallette--> clone repository
+View-->Command Pallette--> close repository
+View-->Command Pallette--> create branch
+View-->Command Pallette--> delete branch
+View-->Command Pallette--> Add Remote
+
+Note:We can run all of the commands through this , Otherwise use git bash command line in Visual Studio.
+
+=============================================================================================
+
+Process for adding branch to the Repository:
+
+echo "# git" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/alawaniy/git.git
+git push -u origin master
+
+
+=============================================================================================
+
